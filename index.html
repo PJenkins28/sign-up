@@ -36,7 +36,7 @@
                         </li>
                         <li>
                             <label for="phone_number">Phone Number:</label>
-                            <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required title="Make sure you've included the dashes"aria-describedby="number_validation">
+                            <input type="tel" maxlength="12" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required title="Make sure you've included the dashes"aria-describedby="number_validation">
                             <span id="number_validation" class="validation-message">Ex: 123-456-7890</span>
                         </li>
                         <li>
@@ -48,12 +48,13 @@
                             <input type="password" minlength="8" maxlength="20" id="confirm" name="password_confirm" required>
                         </li>
                         <li>
-                            <button type="submit" onclick="matchPasswords()">Create Account</button>
+                            <button type="submit" id="submit">Create Account</button>
                         </li>
                     </ul>
                 </form>
         </section>  
     </main>
-<script src="main.js"></script>
+
 </body>
+<script src="main.js"></script>
 </html>
