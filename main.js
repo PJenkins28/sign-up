@@ -1,9 +1,9 @@
 const passwordInitial = document.getElementById("password");
 const passwordConfirm = document.getElementById("confirm");
-const tel = document.getElementById("phone_number");
-const number = document.getElementById("number_validation");
+const tel = document.getElementById("phone-number");
+const number = document.getElementById("number-validation");
 const submit = document.getElementById("submit");
-const noMatch = document.getElementById("password_validation");
+const noMatch = document.getElementById("password-validation");
 function matchPasswords() {
     if (passwordInitial !== passwordConfirm) {
             noMatch.innerText = "passwords do not match";

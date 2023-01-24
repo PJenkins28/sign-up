@@ -20,7 +20,6 @@ main {
     width: 100%;
 }
 .left {
-    /* border: 3px solid black; */
     width: 40%;
     height: 100vh;
     display: flex;
@@ -40,7 +39,6 @@ main {
     width: 60%;
     padding: 10px;
     height: 100vh;
-    /* border: 3px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,7 +107,7 @@ button:hover {
     background-color: rgb(247, 232, 201);
 }
 /* Mobile */
-@media all and (max-width:820px) {
+@media all and (max-width: 820px) {
     main {
         display: block;
     }
