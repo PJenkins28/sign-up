@@ -106,6 +106,7 @@ button:hover, input:hover, input:focus {
 }
 button:hover {
     cursor: pointer;
+    background-color: rgb(247, 232, 201);
 }
 /* Mobile */
 @media all and (max-width:820px) {
