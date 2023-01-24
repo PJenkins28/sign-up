@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>OdinGram</title>
 </head>
 <body>
-    
+    <main>
+        <section class="left">
+            <div class="svg-bg"></div>
+        </section>  
+        <section class="right">
+                <h1>OdinGram</h1>
+                <h2>The world's go-to place for All Things Odin. Show off your coolest 
+                    projects &#x1F919; Like and comment on your friends' projects too!
+                </h2>
+                <form>
+                    <ul>
+                        <li>
+                            <label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </li>
+                        <li>
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </li>
+                        <li>
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </li>
+                        <li>
+                            <label for="phone_number">Phone Number:</label>
+                            <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required title="Make sure you've included the dashes"aria-describedby="number_validation">
+                            <span id="number_validation" class="validation-message">Ex: 123-456-7890</span>
+                        </li>
+                        <li>
+                            <label for="password">Password:</label>
+                            <input type="password" minlength="8" maxlength="20" id="password" name="password" required>
+                        </li>
+                        <li>
+                            <label for="confirm">Confirm Password:</label>
+                            <input type="password" minlength="8" maxlength="20" id="confirm" name="password_confirm" required>
+                        </li>
+                        <li>
+                            <button type="submit">Create Account</button>
+                        </li>
+                    </ul>
+                </form>
+        </section>  
+    </main>
+
 </body>
 </html>
